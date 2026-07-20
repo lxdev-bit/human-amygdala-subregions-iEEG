@@ -20,7 +20,7 @@ The analysis functions avoid hard-coded data paths where possible and operate pr
 
 * **tf_stat.m** — Runs the time–frequency statistical analyses used in this study by preparing the condition-level data and calling `permutest.m`. The script performs cluster-based permutation comparisons of time–frequency power between conditions and returns the observed statistical maps, cluster assignments, and cluster-level permutation probabilities.
 
-* * **conditional_decode_time_windows.m** — Performs time-resolved SVM decoding between two task conditions using repeated 70% training and 30% testing splits at the trial level. PCA is fitted exclusively to the training data within each split and applied to the corresponding test data for dimensionality reduction.
+* **conditional_decode_time_windows.m** — Performs time-resolved SVM decoding between two task conditions using repeated 70% training and 30% testing splits at the trial level. PCA is fitted exclusively to the training data within each split and applied to the corresponding test data for dimensionality reduction.
 
 * **subregional_decode_time_windows.m** — Performs time-resolved SVM decoding between lateral and medial amygdala contacts using leave-one-contact-out cross-validation. In each fold, one contact is retained for testing and all remaining contacts are used for training, with PCA fitted exclusively to the training data.
 
