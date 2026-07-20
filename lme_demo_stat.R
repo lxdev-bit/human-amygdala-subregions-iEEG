@@ -4,7 +4,7 @@
 # The R code for the analysis of z-scored power is provided below as an example:
 
 ```r
-dat <- read_excel("condxhemispher.xlsx")
+dat <- read_excel("condxpower.xlsx")
 
 dat <- dat %>%
   mutate(
