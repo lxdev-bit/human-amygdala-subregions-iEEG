@@ -12,7 +12,7 @@ This repository contains eight MATLAB functions and R scripts used in the connec
 
 * **cal_zpower.m** — Computes single-condition BOSC-based time–frequency power and applies z-score normalization relative to a prestimulus baseline.
 
-* **lme_stat.R** — Provides example R code for the linear mixed-effects model analyses used in the study. The script illustrates factor specification, model fitting with `lmer`, Type III tests, estimated marginal means, and interaction contrasts. The same general workflow was applied across outcome indices, with the fixed-effect structure adapted to the statistical model specified for each index in the Methods. All post hoc comparisons following the linear mixed-effects models were corrected for multiple comparisons using the Bonferroni method.
+* **lme_stat.R** — R code for the linear mixed-effects model analyses with Bonferroni-corrected post hoc comparisons.
 
 * **permutest.m** — Implements a cluster-based permutation test for multidimensional electrophysiological data. The function identifies adjacent samples exceeding a cluster-forming threshold, calculates cluster-level statistics, and evaluates the observed clusters against a permutation-derived null distribution while controlling for multiple comparisons. The procedure is based on the cluster-based permutation framework described by Maris and Oostenveld (2007).
 
@@ -22,7 +22,3 @@ This repository contains eight MATLAB functions and R scripts used in the connec
 
 * **subregional_decode_time_windows.m** — Performs time-resolved SVM decoding between lateral and medial amygdala contacts using leave-one-contact-out cross-validation. In each fold, one contact is retained for testing and all remaining contacts are used for training, with PCA fitted exclusively to the training data.
 
-
-## Reference for the cluster-based permutation procedure
-
-Maris, E., & Oostenveld, R. (2007). Nonparametric statistical testing of EEG- and MEG-data. *Journal of Neuroscience Methods, 164*(1), 177–190. https://doi.org/10.1016/j.jneumeth.2007.03.024
