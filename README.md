@@ -13,14 +13,16 @@ This repository contains eight MATLAB functions and R scripts used in the connec
 | Fig. 3C–E             | `subregional_decode_time_windows.m` | `subregional_decode_shuffle.m` |
 | Fig. 4A / Fig. 6A     | `tf_stat.m`                         | `permutest.m`                  |
 | Fig. 4C / Fig. 6B     | `conditional_decode_time_windows.m` | `conditional_decode_shuffle.m` |
-| Fig. 4D–E / Fig. 6C–D | `extra_point.m`                     | `lme_stat.R`                   |
+| Fig. 4D–E / Fig. 6C–D | `extra_point.m`                     | `lme_demo_stat.R`              |
 | Fig. 5A               | `cal_dwpli.m`                       | —                              |
 | Fig. 5B / Fig. 6E     | `tf_curve_stat.m`                   | `permutest.m`                  |
-| Fig. 5C / Fig. 6F     | `extra_point.m`                     | `lme_stat.R`                   |
-| Fig. 5D / Fig. 6G     | `cal_npCGC.m`, `extra_point.m`      | `lme_stat.R`                   |
+| Fig. 5C / Fig. 6F     | `extra_point.m`                     | `lme_demo_stat.R`              |
+| Fig. 5D / Fig. 6G     | `cal_npCGC.m`, `extra_point.m`      | `lme_demo_stat.R`              |
 | Fig. S3               | `tf_curve_stat.m`                   | `permutest.m`                  |
-| Fig. S8A–C            | `conditional_LOSO_decode.m`         | `lme_stat.R`                   |
+| Fig. S8A–C            | `conditional_LOSO_decode.m`         | `lme_demo_stat.R`              |
 | Fig. S8D–F            | `subregional_LOSO_decode.m`         | `subregional_LOSO_decode.m`    |
+| Fig. S10 / Fig. S11   | `extra_point.m`                     | `lme_hemisphere.R`             |
+| Fig. S14B-D           | `extra_point.m`                     | `lme_nuclei.R`                 |
 
 
 ## Files at a glance
@@ -34,6 +36,10 @@ This repository contains eight MATLAB functions and R scripts used in the connec
 * **extra_point.m** — Extract fixed-window values for subsequent linear mixed-effects models.
 
 * **lme_stat.R** — R code for the linear mixed-effects model analyses with Bonferroni-corrected post hoc comparisons. The analytical procedures were identical across analyses, except for the fixed-effect variables of interest. This code for the analysis of z-scored power is provided below as an example.
+
+- **lme_hemisphere.R** — Performs hemisphere-level linear mixed-effects analyses with Bonferroni-corrected interaction contrasts and post hoc comparisons.
+
+- **lme_nuclei.R** — Performs nucleus-level linear mixed-effects analyses with Bonferroni-corrected interaction contrasts and post hoc comparisons.
 
 * **permutest.m** — Implements a cluster-based permutation test for multidimensional electrophysiological data. The function identifies adjacent samples exceeding a cluster-forming threshold, calculates cluster-level statistics, and evaluates the observed clusters against a permutation-derived null distribution while controlling for multiple comparisons. The procedure is based on the cluster-based permutation framework described by Maris and Oostenveld (2007).
 
