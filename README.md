@@ -4,8 +4,6 @@ This repository contains seven MATLAB functions and R scripts used in the connec
 
 **“Functional specialization and dynamical interaction in human amygdala subregions support fearful-expression recognition.”**
 
-The analysis functions avoid hard-coded data paths where possible and operate primarily on in-memory arrays. Users should adapt data-loading procedures, variable names, and analysis parameters to their own datasets.
-
 ## Files at a glance
 
 * **cal_dwpli.m** — Computes debiased weighted phase-lag index (dwPLI) connectivity between two channels across time and frequency.
