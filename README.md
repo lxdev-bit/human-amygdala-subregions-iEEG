@@ -2,7 +2,7 @@
 
 This repository contains eight MATLAB functions and R scripts used in the connectivity, decoding, time–frequency, and statistical analyses reported in the paper:
 
-**“Functional specialization and dynamical interaction in human amygdala subregions support fearful-expression recognition.”**
+**Dan Cao, Jiachen Cui, Xinyuan Yan, Xinru Zhang, Yuanyuan Dang, Hulin Zhao, Jin Li, Jianning Zhang, and Zhang, Yanyang. "Functional specialization and dynamical interaction in human amygdala subregions support fearful-expression processing." (2026).**
 
 ## Files at a glance
 
