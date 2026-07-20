@@ -1,6 +1,6 @@
 # Analysis Functions and Scripts for iEEG Local activity, Connectivity, Decoding, and Statistical Analysis
 
-This repository contains seven MATLAB functions and R scripts used in the connectivity, decoding, time–frequency, and statistical analyses reported in the paper:
+This repository contains eight MATLAB functions and R scripts used in the connectivity, decoding, time–frequency, and statistical analyses reported in the paper:
 
 **“Functional specialization and dynamical interaction in human amygdala subregions support fearful-expression recognition.”**
 
