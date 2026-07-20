@@ -19,7 +19,7 @@ This repository contains eight MATLAB functions and R scripts used in the connec
 | Fig. 5D / Fig. 6G     | `cal_npCGC.m`, `extra_point.m`      | `lme_stat.R`                   |
 | Fig. S3               | `tf_curve_stat.m`                   | `permutest.m`                  |
 | Fig. S8A–C            | `conditional_LOSO_decode.m`         | `lme_stat.R`                   |
-| Fig. S8D–F            | `subregional_LOSO_decode.m`                                          |
+| Fig. S8D–F            | `subregional_LOSO_decode.m`         | `subregional_LOSO_decode.m`    |
 
 
 ## Files at a glance
