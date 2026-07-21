@@ -35,24 +35,24 @@ This repository contains eight MATLAB functions and R scripts used in the connec
 
 * **extra_point.m** — Extract fixed-window values for subsequent linear mixed-effects models.
 
-* **lme_stat.R** — R code for the linear mixed-effects model analyses with Bonferroni-corrected post hoc comparisons. The analytical procedures were identical across analyses, except for the fixed-effect variables of interest. This code for the analysis of z-scored power is provided below as an example.
+* **lme_demo_stat.R** —  Implements the linear mixed-effects model analyses reported in the study, including model fitting, Type III tests, estimated marginal means, interaction contrasts, and Bonferroni-corrected post hoc comparisons.
 
 - **lme_hemisphere.R** — Performs hemisphere-level linear mixed-effects analyses with Bonferroni-corrected interaction contrasts and post hoc comparisons.
 
 - **lme_nuclei.R** — Performs nucleus-level linear mixed-effects analyses with Bonferroni-corrected interaction contrasts and post hoc comparisons.
 
-* **permutest.m** — Implements a cluster-based permutation test for multidimensional electrophysiological data. The function identifies adjacent samples exceeding a cluster-forming threshold, calculates cluster-level statistics, and evaluates the observed clusters against a permutation-derived null distribution while controlling for multiple comparisons. The procedure is based on the cluster-based permutation framework described by Maris and Oostenveld (2007).
+* **permutest.m** — Implements cluster-based permutation testing for multidimensional electrophysiological data. Supra-threshold adjacent samples are grouped into clusters, cluster mass is calculated as the sum of t-values, and cluster-level significance is assessed against a permutation distribution of the maximum absolute cluster mass, thereby controlling the family-wise error rate across the analyzed data space. The procedure follows Maris and Oostenveld (2007).
 
 * **tf_stat.m** — Runs the time–frequency statistical analyses used in this study by preparing the condition-level data and calling `permutest.m`. The script performs cluster-based permutation comparisons of time–frequency power between conditions and returns the observed statistical maps, cluster assignments, and cluster-level permutation probabilities.
 
-* **tf_curve_stat.m** — Extract frequency-averaged time courses and perform paired cluster-based permutation tests between conditions.
+* **tf_curve_stat.m** — Extracts frequency-averaged time courses and performs paired cluster-based permutation tests between conditions.
 
 * **conditional_decode_time_windows.m** — Performs time-resolved SVM decoding between two task conditions using repeated 70% training and 30% testing splits at the trial level. PCA is fitted exclusively to the training data within each split and applied to the corresponding test data for dimensionality reduction.
 
-* **conditional_decode_shuffle.m** — Label-shuffling permutation analysis for sliding-window conditional decoding using repeated train/test splits.
+* **conditional_decode_shuffle.m** — Performs label-shuffling permutation tests for time-resolved condition decoding, generating the corresponding decoding null distributions.
 
-* **conditional_LOSO_decode.m** — Subject-level leave-one-subject-out decoding with label-shuffling permutation analysis.
-
+* **conditional_LOSO_decode.m** — Performs participant-level leave-one-subject-out decoding, with statistical significance assessed using label-shuffling permutation tests.
+* 
 * **subregional_decode_time_windows.m** — Performs time-resolved SVM decoding between lateral and medial amygdala contacts using leave-one-contact-out cross-validation. In each fold, one contact is retained for testing and all remaining contacts are used for training, with PCA fitted exclusively to the training data.
 
 * **subregional_decode_shuffle.m** —  Label-shuffling permutation analysis for time-resolved subregional decoding using leave-one-contact-out cross-validation.
